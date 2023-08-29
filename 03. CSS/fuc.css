@@ -7,7 +7,7 @@
     background: rgba(255, 0, 0, 0);
     border: 0px solid;
     color: white;
-    font-size: 1.8rem;
+    font-size: 1.2rem;
     position: relative;
     text-align: center;
 }
@@ -23,6 +23,7 @@
     white-space: nowrap;
     text-size-adjust: auto;
     overflow: hidden;
+    text-align: center;
 }
 
 /* Button & Text & Image Area */
@@ -31,16 +32,22 @@
     width: 100%;
     height: 100%;
     border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
     border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
     border: 1px solid rgba(86, 86, 86, 0.658);
+    box-shadow: 3px 3px 10px #1e1e1e7b;
 }
 
 .banner_2, .banner_4 {
     width: 100%;
     height: 100%;
+    border-top-left-radius: 20px;
     border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
     border: 1px solid rgba(86, 86, 86, 0.658);
+    box-shadow: 3px 3px 10px #1e1e1e7b;
 }
 
 .banner_5{
@@ -48,4 +55,41 @@
     height: 100%;
     border-radius: 20px;
     border: 1px solid rgba(150, 150, 150, 0.637);
+    box-shadow: 3px 3px 10px #1e1e1e7b;
 }
+
+.prev{
+    cursor: pointer;
+    position: relative;
+    float: right;
+    top: 40%;
+    width: auto;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 30px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+
+.next {
+    cursor: pointer;
+    position: relative;
+    top: 40%;
+    width: auto;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 30px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+
+  /* 로고 위에 마우스 오버시 효과 추가 */
+  .logo:hover{
+    cursor: grab;
+    transform: scale(1.5);
+    
+  }

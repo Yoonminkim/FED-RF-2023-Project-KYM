@@ -2,10 +2,11 @@
 
 @import url(./area.css);
 @import url(./fuc.css);
+@import url(./nav.css);
 
 .col-0-5{width: 4%;}
 .col-1 {width: 8.33%;}
-.col-1-5 {width: 12.1%}
+.col-1-5 {width: 12.495%}
 .col-2 {width: 16.66%;}
 .col-2-5 {width: 20%;}
 .col-3 {width: 25%;}
@@ -40,7 +41,7 @@ html, body, h1, h2, h3, h4, h5, h6 {
 
 /* background Image Set */
 body{
-    background: #222222 url(../02.\ image/main_bg_img_black.png) no-repeat fixed center/100%;
+    background: #222222 url(../02.\ image/main_bg_img_black_more.png) no-repeat fixed center/100%;
 }
 
 .clb::after {
