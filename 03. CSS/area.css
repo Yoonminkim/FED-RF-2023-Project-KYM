@@ -168,14 +168,14 @@
 }
 
 .fade{
-    animation: fade .1s ease-in forwards;
+    animation: fade .2s ease-in forwards;
 }
 
 @keyframes fade {
     from {
-        right: 300px;
+        opacity: .2;
     }
     to {
-        right: 500px;
+        opacity: 1;
     }
 }
