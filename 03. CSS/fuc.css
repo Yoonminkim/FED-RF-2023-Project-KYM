@@ -58,6 +58,13 @@
     box-shadow: 3px 3px 10px #1e1e1e7b;
 }
 
+/* 배너 이미지 꽉채우기 */
+
+.part-box img{
+    object-fit: cover;
+}
+
+
 .prev{
     cursor: pointer;
     position: relative;
@@ -91,5 +98,4 @@
   .logo:hover{
     cursor: grab;
     transform: scale(1.5);
-    
   }
