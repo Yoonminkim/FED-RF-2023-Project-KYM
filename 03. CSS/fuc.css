@@ -28,7 +28,7 @@
 
 /* Button & Text & Image Area */
 
-.banner, .banner_s{
+.banner_1, .banner_3 {
     width: 100%;
     height: 100%;
     border-top-left-radius: 20px;
@@ -39,16 +39,24 @@
     box-shadow: 3px 3px 10px #1e1e1e7b;
 }
 
-.banner-2, .banner-3, .banner-5,.banner-6{
-    display: none;
+.banner_2, .banner_4 {
+    width: 100%;
+    height: 100%;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border: 1px solid rgba(86, 86, 86, 0.658);
+    box-shadow: 3px 3px 10px #1e1e1e7b;
 }
 
-
-/* 배너 이미지 꽉채우기 */
-.part-box img{
-    object-fit: cover;
+.banner_5{
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    border: 1px solid rgba(150, 150, 150, 0.637);
+    box-shadow: 3px 3px 10px #1e1e1e7b;
 }
-
 
 .prev{
     cursor: pointer;
@@ -83,4 +91,5 @@
   .logo:hover{
     cursor: grab;
     transform: scale(1.5);
+    
   }
