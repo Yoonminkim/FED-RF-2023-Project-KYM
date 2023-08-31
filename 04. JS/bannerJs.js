@@ -4,7 +4,6 @@ let slideIndex = 1;
 const prev_btn = document.querySelector('.prev');
 const next_btn = document.querySelector('.next');
 
-
 showSlides(slideIndex);
 
 function plusSlides(n) {
@@ -46,10 +45,6 @@ function showSlides_auto() {
     slides[slideIndex - 1].style.display = "block";
     var time_1 = setTimeout(showSlides_auto, time);
     console.log(time_1);
-
-    if (prev_btn.onclick() == true){
-      console.log('yaho');
-    };
 };
 
 let slideIndex_2 = 1;
@@ -85,6 +80,7 @@ function showSlides_auto_2() {
 
     for (i = 0; i < slides_2.length; i++) {
         slides_2[i].style.display = "none";
+        console.log(slides_2[i]);
     }
     slideIndex_2++;
     if (slideIndex_2 > slides_2.length) {
@@ -92,6 +88,7 @@ function showSlides_auto_2() {
     }
     slides_2[slideIndex_2 - 1].style.display = "block";
     var time_2 = setTimeout(showSlides_auto_2, time);
+    console.log(time_2);
 };
 
 // 배너 자동 실행 함수

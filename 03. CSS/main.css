@@ -39,6 +39,10 @@ html, body, h1, h2, h3, h4, h5, h6 {
     padding: 0;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 /* background Image Set */
 body{
     background: #222222 url(../02.\ image/main_bg_img_black_more.png) no-repeat fixed center/100%;
