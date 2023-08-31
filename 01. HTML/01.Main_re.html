@@ -7,13 +7,16 @@
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
     <link rel="stylesheet" href="../03. CSS/main.css">
-
+    <!-- navi js -->
+    <script type="text/javascript" src="../04. JS/navi.js"></script>
+    <script type="text/javascript" src="../04. JS/auto_scroll.js"></script>
 </head>
 
 <body>
 
-    <!-- Header area -->
+    <header class="lift-area"></header>
 
+    <!-- Header area -->
     <header class="top-area">
         <div class="in-box">
             <div class="part-box col-1">
@@ -40,65 +43,63 @@
         </div>
 
     </header>
+<!-- Header area -->
 
-    <!-- Header area -->
+    <section class="page">
 
     <!-- //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
     <!-- //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
 
-    <!-- 공간 추가 -->
-
-    <!-- Main content area -->
-
-    <section class="main-area">
-        <div class="in-box">
-            <div class="part-box col-1">
-                <a class="prev" onclick="plusSlides(-1), plusSlides_2(-1)">&#10094;</a>
-            </div>
+        <section class="main-area">
+            <div class="in-box">
+                <div class="part-box col-2">
+                    <a class="prev" onclick="plusSlides(-1), plusSlides_2(-1)">&#10094;</a>
+                </div>
+                    
+                <!-- slide 공간 3~4개 추가 필요함 -->
+                    <div class="slideshow-area part-box col-4">
+                        <div class="slideshow fade part-box">
+                            <img class="banner_1" src="../02. image/banner_2.jpg" alt="배너1"/>
+                        </div>
+                        <div class="slideshow fade part-box">
+                            <img class="banner_1" src="../02. image/banner_7.jpg" alt="배너1"/>                        
+                        </div>
+                        <div class="slideshow fade part-box">
+                            <img class="banner_1" src="../02. image/banner_8.jpg" alt="배너1"/>                        
+                        </div>
+                    </div>
                 
-            <!-- slide 공간 3~4개 추가 필요함 -->
-                <div class="slideshow-area part-box col-5">
-                    <div class="slideshow fade part-box">
-                        <img class="banner_1" src="../02. image/banner_2.jpg" alt="배너1"/>
+                <!-- silde 공간 3~4개 추가 필요 -->
+                    <div class="slideshow-area part-box col-4">
+                        <div class="slideshow_2 fade part-box">
+                            <img class="banner_2" src="../02. image/banner_7.jpg" alt="배너2"/>
+                        </div>
+                        <div class="slideshow_2 fade part-box">
+                            <img class="banner_2" src="../02. image/banner_8.jpg" alt="배너2"/>
+                        </div>
+                        <div class="slideshow_2 fade part-box">
+                            <img class="banner_2" src="../02. image/banner_2.jpg" alt="배너2"/>
+                        </div>
                     </div>
-                    <div class="slideshow fade part-box">
-                        <img class="banner_1" src="../02. image/banner_7.jpg" alt="배너1"/>                        
-                    </div>
-                    <div class="slideshow fade part-box">
-                        <img class="banner_1" src="../02. image/banner_8.jpg" alt="배너1"/>                        
-                    </div>
-                </div>
-            
-            <!-- silde 공간 3~4개 추가 필요 -->
-                <div class="slideshow-area part-box col-5">
-                    <div class="slideshow_2 fade part-box">
-                        <img class="banner_2" src="../02. image/banner_7.jpg" alt="배너2"/>
-                    </div>
-                    <div class="slideshow_2 fade part-box">
-                        <img class="banner_2" src="../02. image/banner_8.jpg" alt="배너2"/>
-                    </div>
-                    <div class="slideshow_2 fade part-box">
-                        <img class="banner_2" src="../02. image/banner_2.jpg" alt="배너2"/>
-                    </div>
+
+                <div class="part-box col-2">
+                    <a class="next" onclick="plusSlides(1), plusSlides_2(1)">&#10095;</a>
                 </div>
 
-            <div class="part-box col-1">
-                <a class="next" onclick="plusSlides(1), plusSlides_2(1)">&#10095;</a>
             </div>
+        </section>
 
-        </div>
+        <section class="second-area">
+            <div class="in-box">
+                <div class="part-box col-5"></div>
+                <div class="part-box col-2">
+                    <button class="menu-Btn-4">Show more Whiskey</button>
+                </div>
+                <div class="part-box col-5"></div>
+            </div>
+        </section>
     </section>
 
-    <section class="second-area">
-        <div class="in-box">
-            <div class="part-box col-5"></div>
-            <div class="part-box col-2">
-                <button class="menu-Btn-4 font-hansans">위스키 추천 바로가기</button>
-            </div>
-            <div class="part-box col-5"></div>
-        </div>
-    </section>
-    
     <!-- <section class="second-area">
         <div class="in-box">
             <div class="part-box col-3"></div>
@@ -122,26 +123,27 @@
         </div>
     </section> -->
     
-    <section class="third-area">
-        <div class="in-box">
-            <div class="part-box col-2"></div>
-            <div class="part-box col-8">
-                <img class="banner_5" src="../02. image/banner_4.jpg" alt="배너1"/>
+    <section class="page">
+        <section class="third-area">
+            <div class="in-box">
+                <div class="part-box col-2-5"></div>
+                <div class="part-box col-7">
+                    <img class="banner_5" src="../02. image/banner_4.jpg" alt="배너1"/>
+                </div>
+                <div class="part-box col-2-5"></div>
             </div>
-            <div class="part-box col-2"></div>
-        </div>
-    </section>
+        </section>
 
-    <section class="four-area">
-        <div class="in-box">
-            <div class="part-box col-5"></div>
-            <div class="part-box col-2">
-                <button class="menu-Btn-4 font-hansans">위스키 추천 바로가기</button>
+        <section class="four-area">
+            <div class="in-box">
+                <div class="part-box col-5"></div>
+                <div class="part-box col-2">
+                    <button class="menu-Btn-5">위스키 추천 바로가기</button>
+                </div>
+                <div class="part-box col-5"></div>
             </div>
-            <div class="part-box col-5"></div>
-        </div>
+        </section>
     </section>
-
 
     <!-- Main content area -->
 
@@ -150,41 +152,40 @@
 
     <!-- Footer area -->
 
-    <footer class="footer-area_1">
-        <div class="in-box">
-            <div class="part-box col-5"></div>
-            <div class="part-box col-2">
-                <div class="caption_1"></div>
+        
+    <section class="page">
+        <footer class="footer-area_1">
+            <div class="in-box">
+                <div class="part-box col-5"></div>
+                <div class="part-box col-2">
+                    <div class="caption_1"></div>
+                </div>
+                <div class="part-box col-5"></div>
             </div>
-            <div class="part-box col-5"></div>
-        </div>
-    </footer>
-    
-    <footer class="footer-area_2">
-        <div class="in-box">
-            <div class="part-box col-2"></div>
-            <div class="part-box col-2">
-                <div class="caption_1"></div>
+        </footer>
+        
+        <footer class="footer-area_2">
+            <div class="in-box">
+                <div class="part-box col-2"></div>
+                <div class="part-box col-2">
+                    <div class="caption_1"></div>
+                </div>
+                <div class="part-box col-1"></div>
+                <div class="part-box col-2">
+                    <div class="caption_1"></div>
+                </div>
+                <div class="part-box col-1"></div>
+                <div class="part-box col-2">
+                    <div class="caption_1"></div>
+                </div>
             </div>
-            <div class="part-box col-1"></div>
-            <div class="part-box col-2">
-                <div class="caption_1"></div>
-            </div>
-            <div class="part-box col-1"></div>
-            <div class="part-box col-2">
-                <div class="caption_1"></div>
-            </div>
-        </div>
-    </footer>
-
+        </footer>
+    </section>
 
     <!-- Footer area -->
 
-
-    <!-- navi js -->
     <script type="text/javascript" src="../04. JS/bannerJs.js"></script>
-    <script type="text/javascript" src="../04. JS/navi.js"></script>
-    
+
 </body>
 
 </html>

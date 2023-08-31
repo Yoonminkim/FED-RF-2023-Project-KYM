@@ -34,14 +34,20 @@
 
 /*///////////////////////////////////////////////////////////////////////////////////////////////////*/
 
+/* lift CSS Area */
+.lift-area{
+    height: 3vh;
+}
+
+
 /* Header CSS Area */
 .top-area{
-    margin-top: 60px;
-    margin-bottom: 70px;
-    height: 90px;
+    height: 10vh;
     position: sticky;
-    background: #000000aa;
-    top: 5px;
+    /* padding-top: 5vh; */
+    background: #838080aa;
+    top: 5vh;
+    z-index: 999;
 }
 
 .logo{
@@ -58,27 +64,28 @@
 
 /* Main CSS Area */
 .main-area{
+    padding-top: 15vh;
     height: 50vh;
 }
 
 .second-area{
-    margin-top: 100px;
-    height: 10vh;
+    padding-top: 5vh;
+    height: 8vh;
 }
 
-.bar-area{
+/* .bar-area{
     margin-top: 10px;
     height: 10px;
-}
+} */
 
 .third-area{
-    margin-top: 100px;
-    height: 70vh;
+    margin-top: 15vh;
+    height: 60vh;
 }
 
 .four-area{
-    margin-top: 40px;
-    height: 7vh;
+    margin-top: 5vh;
+    height: 8vh;
 }
 
 /* Main CSS Area */
@@ -87,8 +94,8 @@
 
 /* Footer CSS Area */
 .footer-area_1{
-    margin-top: 100px;
-    height: 250px
+    padding-top: 18vh;
+    height: 25vh;
 }
 
 .caption_1{
@@ -101,9 +108,9 @@
 }
 
 .footer-area_2{
-    margin-top: 80px;
-    margin-bottom: 200px;
-    height: 200px
+    margin-top: 8vh;
+    margin-bottom: 20vh;
+    height: 20vh;
 }
 
 .caption_2{
@@ -129,7 +136,7 @@
 
 /* Common CSS Area */
 .in-box{
-    max-width: 1650px;
+    max-width: 1650vw;
     height: 100%;
     margin: 0 auto;
 }
@@ -140,7 +147,7 @@
 }
 
 .part-box>button{
-    padding: 25px 40px;
+    padding: 1vw 1vh;
 }
 /* Common CSS Area */
 
