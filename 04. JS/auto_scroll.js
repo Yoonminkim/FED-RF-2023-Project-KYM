@@ -11,9 +11,6 @@ window.addEventListener('wheel', wheelFn);
 window.addEventListener('DOMContentLoaded', loadFn);
 
 
-const qs = x => document.querySelector(x);
-const qsa = x => document.querySelectorAll(x);
-
 
 function loadFn(){
 

@@ -58,3 +58,20 @@ body{
 .page{
     height: 90vh;
 }
+
+.total-menu{
+    position: fixed;
+    top: 0;
+    left: -100vw;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(255, 0, 0, 0.459);
+    
+    z-index: 999;
+
+    transition: .4s ease-in-out;
+}
+/* 보여주는 클래스 */
+.total-menu.on{
+    left: 0;
+}
