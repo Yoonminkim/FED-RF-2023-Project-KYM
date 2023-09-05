@@ -1,6 +1,4 @@
 
-
-
 // 버튼 대상
 const btnMenu = qs('.menu-Btn-1');
 // 전체메뉴

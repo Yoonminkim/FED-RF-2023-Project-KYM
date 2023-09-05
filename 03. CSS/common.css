@@ -3,6 +3,7 @@
 @import url(./area.css);
 @import url(./fuc.css);
 @import url(./button.css);
+@import url(./nav.css);
 
 .col-0-5{width: 4%;}
 .col-1 {width: 8.33%;}
@@ -57,21 +58,4 @@ body{
 
 .page{
     height: 90vh;
-}
-
-.total-menu{
-    position: fixed;
-    top: 0;
-    left: -100vw;
-    width: 100vw;
-    height: 100vh;
-    background-color: rgba(255, 0, 0, 0.459);
-    
-    z-index: 999;
-
-    transition: .4s ease-in-out;
-}
-/* 보여주는 클래스 */
-.total-menu.on{
-    left: 0;
 }
