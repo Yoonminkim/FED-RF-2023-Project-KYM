@@ -1,9 +1,9 @@
 @charset "utf-8";
 
-@import url(./area.css);
-@import url(./fuc.css);
-@import url(./button.css);
-@import url(./nav.css);
+@import url(./CS_area_new.css);
+@import url(./CS_button_new.css);
+@import url(./CS_fuc_new.css);
+@import url(./CS_nav_new.css);
 
 .col-0-5{width: 4%;}
 .col-1 {width: 8.33%;}
@@ -35,7 +35,7 @@ html::-webkit-scrollbar{
     display: none;
 }
 
-html, body, h1, h2, h3, h4, h5, h6 {
+html, body, h1, h2, h3, h4, h5, h6, ul, li, ol{
     margin: 0;
     padding: 0;
 }

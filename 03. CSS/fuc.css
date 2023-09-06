@@ -71,12 +71,6 @@
     box-shadow: 3px 3px 10px #1e1e1e7b;
 }
 
-.btn_check{
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-}
-
 .prev{
     cursor: pointer;
     position: relative;
