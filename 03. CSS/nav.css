@@ -1,5 +1,6 @@
 @charset "utf-8";
 
+<<<<<<< Updated upstream
 ol, li {
     list-style: none;
     margin: 0;
@@ -37,3 +38,51 @@ ol, li {
 .sub-menu a:hover{
     color: rgb(190, 84, 84);
 }
+=======
+ol, li{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+
+.sub-menu {
+    position: absolute;
+    left: 50%;
+    /* 가로방향 메뉴 정중앙이동! */
+    transform: translateX(-50%);
+
+    /* top은 현재 젠틀하다!
+    top을 주면 부모로부터 다시 수치를 크게
+    조정해야하므로 마진탑으로 세부조정한다! */
+    margin-top: 30px;
+
+    width: min(200px, 18vw);
+    border-radius: 15px;
+    background-color: rgba(0, 0, 128, 0.7);
+    /* 박스글로우효과 */
+    box-shadow: inset 0 0 5px lightblue;
+
+    /* 숨기기 높이값0 */
+    height: 0;
+    /* 넘치는 요소 숨기기 */
+    overflow: hidden;
+    /* 투명하게 */
+    opacity: 0;
+
+    /* 트랜지션 */
+    transition: 0.4s ease-in-out;
+}
+
+/* 메뉴버튼에 마우스 오버시 
+서브메뉴 보이기 애니 공통(투명도) */
+.menu-Btn-1:hover .sub-menu{
+    cursor: pointer;
+    /* height: calc(40px*5); */
+    /* height: auto;
+    - 자동높이값은 애니메이션 불가! */
+
+    /* 투명도 복구 */
+    opacity: 1;
+}
+>>>>>>> Stashed changes

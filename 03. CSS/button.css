@@ -2,12 +2,6 @@
 
   /* 메뉴 버튼에 마우스 오버시 동작 */
 
-  .menu-Btn-1:hover{
-    color: rgb(73, 53, 53);
-    transform: scale(1.5);
-    cursor: pointer;
- }
-
  .menu-Btn-2:hover{
     color: rgb(73, 53, 53);
     transform: scale(1.5);
