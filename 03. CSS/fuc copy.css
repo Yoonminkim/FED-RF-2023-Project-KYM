@@ -78,6 +78,14 @@
 }
 
 .prev{
+    
+}
+
+.next{
+    
+}
+
+/* .prev{
     cursor: pointer;
     position: relative;
     float: right;
@@ -104,4 +112,4 @@
     transition: 0.6s ease;
     border-radius: 0 3px 3px 0;
     user-select: none;
-  }
+  } */

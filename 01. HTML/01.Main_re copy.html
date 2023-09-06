@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="../03. CSS/common.css">
     <!-- navi js -->
     <script src="../04. JS/common.js"></script>
-    <script type="text/javascript" src="../04. JS/bannerJs.js" defer></script>
+    <!-- <script type="text/javascript" src="../04. JS/bannerJs.js" defer></script> -->
     <script type="text/javascript" src="../04. JS/navi.js" defer></script>
     <script type="text/javascript" src="../04. JS/auto_scroll.js" defer></script>
     <script>
@@ -77,44 +77,28 @@
 
         <section class="main-area">
             <div class="in-box">
-                <div class="part-box col-2">
-                    <a class="prev" onclick="plusSlides(-1), plusSlides_2(-1)">&#10094;</a>
-                </div>
-                    
-                <!-- slide 공간 3~4개 추가 필요함 -->
-                    <div class="slideshow-area part-box col-4">
-                        <div class="slideshow fade part-box">
-                            <img class="banner_1" src="../02. image/banner_2.jpg" alt="배너1"/>
-                        </div>
-                        <div class="slideshow fade part-box">
-                            <img class="banner_1" src="../02. image/banner_7.jpg" alt="배너1"/>                        
-                        </div>
-                        <div class="slideshow fade part-box">
-                            <img class="banner_1" src="../02. image/banner_8.jpg" alt="배너1"/>                        
-                        </div>
-                    </div>
-                
-                <!-- silde 공간 3~4개 추가 필요 -->
-                    <div class="slideshow-area part-box col-4">
-                        <div class="slideshow_2 fade part-box">
-                            <img class="banner_2" src="../02. image/banner_7.jpg" alt="배너2"/>
-                        </div>
-                        <div class="slideshow_2 fade part-box">
-                            <img class="banner_2" src="../02. image/banner_8.jpg" alt="배너2"/>
-                        </div>
-                        <div class="slideshow_2 fade part-box">
-                            <img class="banner_2" src="../02. image/banner_2.jpg" alt="배너2"/>
-                        </div>
-                    </div>
-
-                <div class="part-box col-2">
-                    <a class="next" onclick="plusSlides(1), plusSlides_2(1)">&#10095;</a>
-                </div>
-
+                <section class="banner_area">
+                    <button class="col-2">
+                        <a class="btn_check prev">&#10094;</a>
+                    </button>
+                    <ul class="col-4">
+                        <li><img src="../02. image/banner_1.jpg" alt="배너"></li>
+                        <li><img src="../02. image/banner_2.jpg" alt="배너"></li>
+                        <li><img src="../02. image/banner_3.jpg" alt="배너"></li>
+                        <li><img src="../02. image/banner_4.jpg" alt="배너"></li>
+                    </ul>
+                    <ul class="col-4">
+                        <li><img src="../02. image/banner_2.jpg" alt="배너"></li>
+                        <li><img src="../02. image/banner_3.jpg" alt="배너"></li>
+                        <li><img src="../02. image/banner_4.jpg" alt="배너"></li>
+                        <li><img src="../02. image/banner_5.jpg" alt="배너"></li>
+                    </ul>
+                    <button class="col-2">
+                        <a class="btn_check next">&#10095;</a>
+                    </button>
+                </section>
             </div>
         </section>
-
-        
 
         <section class="second-area">
             <div class="in-box">
@@ -126,7 +110,7 @@
             </div>
         </section>
     </section>
-
+    
     <!-- <section class="second-area">
         <div class="in-box">
             <div class="part-box col-3"></div>

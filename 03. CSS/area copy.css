@@ -1,0 +1,196 @@
+@charset "utf-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Qwitcher+Grypen:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@500&family=Qwitcher+Grypen:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Black+Han+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Black+Han+Sans&display=swap');
+
+
+.logo-font{
+    font-family: 'Qwitcher Grypen', cursive;
+    color: #fff;
+    font-size: 5em;
+}
+
+.font-noto{
+    font-family: 'Noto Serif KR', serif;
+    font-family: 'Qwitcher Grypen', cursive;
+    color: #fff;
+    font-size: 5em;
+}
+
+.font-blackhan{
+    font-family: 'Black Han Sans', sans-serif;
+    color: #fff;
+    font-size: 5em;
+}
+
+.font-hansans{
+    font-family: 'Black Han Sans', sans-serif;
+    color: #fff;
+    font-size: 5em;
+}
+
+
+/*///////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+/* lift CSS Area */
+.lift-area{
+    height: 3vh;
+}
+
+
+/* Header CSS Area */
+.top-area{
+    height: 10vh;
+    position: sticky;
+    /* padding-top: 5vh; */
+    background: #838080aa;
+    top: 5vh;
+    z-index: 999;
+}
+
+.logo{
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    text-align: center;
+    white-space: nowrap;
+}
+
+/* Header CSS Area */
+
+/*///////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+/* Main CSS Area */
+.main-area{
+    position: relative;
+    padding-top: 15vh;
+    height: 50vh;
+}
+
+.banner_area{
+    display: flex;
+    position: absolute;
+    width: 100%;
+    height: 50vh;
+}
+
+.banner_area ul{
+    flex-shrink: 0;
+    flex-basis: 100%;
+}
+
+.second-area{
+    padding-top: 5vh;
+    height: 8vh;
+}
+
+/* .bar-area{
+    margin-top: 10px;
+    height: 10px;
+} */
+
+.third-area{
+    margin-top: 15vh;
+    height: 60vh;
+}
+
+.four-area{
+    margin-top: 5vh;
+    height: 8vh;
+}
+
+/* Main CSS Area */
+
+/*///////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+/* Footer CSS Area */
+.footer-area_1{
+    padding-top: 18vh;
+    height: 25vh;
+}
+
+.caption_1{
+    width: 100%;
+    height: 100%;
+    background: rgba(16, 16, 16, 0.80);
+    border-radius: 20px;
+    border: 1px solid #3f3f3f;
+    box-shadow: 3px 3px 10px #1e1e1e7b;
+}
+
+.footer-area_2{
+    margin-top: 8vh;
+    margin-bottom: 20vh;
+    height: 20vh;
+}
+
+.caption_2{
+    width: 100%;
+    height: 100%;
+    background: white;
+}
+.caption_3{
+    width: 100%;
+    height: 100%;
+    background: white;
+}
+.caption_4{
+    width: 100%;
+    height: 100%;
+    background: white;
+}
+
+
+/* Footer CSS Area */
+
+/*///////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+/* Common CSS Area */
+.in-box{
+    max-width: 1650vw;
+    height: 100%;
+    margin: 0 auto;
+}
+.part-box{
+    width: 100%;
+    height: 100%;
+    float: left;
+}
+
+/* Common CSS Area */
+
+
+/***************************************************************************************************
+슬라이드 쇼 들어갈 공간
+**************************************************************************************************/
+
+.slideshow-are{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.slideshow{
+    width: 100%;
+    height: 100%;
+}
+
+.slideshow_2{
+    width: 100%;
+    height: 100%;
+}
+
+.fade{
+    animation: fade .2s ease-in forwards;
+}
+
+@keyframes fade {
+    from {
+        opacity: .2;
+    }
+    to {
+        opacity: 1;
+    }
+}
