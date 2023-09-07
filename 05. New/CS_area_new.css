@@ -69,69 +69,49 @@
     height: 50vh;
 }
 
-.banner_area{
+.in-box>.part-box>.slide{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.slide{
     display: flex;
-    position: relative;
-    width: 100%;
-    height: 100%;
-}
-
-.banner_area>a{
-    position: relative;
-    width: 100%;
-    height: 100%;
-
-}
-
-.banner_area>ul>li{
-    position: relative;
-    width: 100%;
-    height: 100%;
-}
-
-
-.slide1{
-    position: relative;
-    float: left;
+    position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
 }
 
-.slide2{
-    position: relative;
-    float: left;
-    top: 0;
-    left: 0;
+.in-box>.part-box ul{
     width: 100%;
     height: 100%;
 }
 
+.in-box>.part-box ul li{
+    flex-shrink: 0;
+    flex-basis: 100%;
+}
 
-.slide1 li img{
+.in-box>.part-box ul li img{
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
 
-
-
-/* 
-.banner_area>ul{
+/* 버튼 위치 조정을 위한 CSS */
+.in-box>.part-box>a{
     position: relative;
-    width: 100%;
-    height: 100%;
-} */
+    font-size: min(5vw,50px);
+    text-decoration: none;
+    top: 50%;
+    left: -40%;
+    transform: translateY(-50%);
+}
 
-/* .in-box>.banner_area{
-    position: relative;
-    width: 100%;
-    height: 100%;
-} */
-
-
-
+/* /////////////////////////////////////////////////////////////////////////////////////////// */
 
 .second-area{
     padding-top: 5vh;
@@ -207,16 +187,12 @@
     margin: 0 auto;
 }
 .part-box{
+    position: relative;
     width: 100%;
     height: 100%;
     float: left;
 }
-
-.part-box>button{
-    padding: 1vw 1vh;
-}
 /* Common CSS Area */
-
 
 /***************************************************************************************************
 슬라이드 쇼 들어갈 공간

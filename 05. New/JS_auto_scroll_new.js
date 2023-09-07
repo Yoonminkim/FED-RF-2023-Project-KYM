@@ -10,8 +10,6 @@ setTimeout(()=>{window.scrollTo(0,0)},200);
 window.addEventListener('wheel', wheelFn);
 window.addEventListener('DOMContentLoaded', loadFn);
 
-
-
 function loadFn(){
 
     console.log('로딩완료');
