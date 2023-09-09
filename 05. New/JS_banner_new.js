@@ -26,7 +26,8 @@ function loadFc() {
     // 1-1.이벤트 대상: .abtn
     const abtn = qsa('.btn_check');
     // 1-2.변경 대상: #slide
-    const slide = qs('.slide');
+    const slide = qs('.slide1');
+    const slide2 = qs('.slide2');
 
     // 대상확인
     console.log('대상',abtn,slide);
@@ -65,25 +66,41 @@ function loadFc() {
 
         // 2. 슬라이드 li 새로 읽기
         let eachOne = slide.querySelectorAll('li');
+        let eachOne2 = slide2.querySelectorAll('li');
 
         console.log('eachOne 길이는?',eachOne.length);
 
         // 3. 버튼분기하기 '.ab2' 이면 오른쪽버튼
         if(isRight){ // 오른쪽버튼
-            //1.대상이동하기
-            slide.style.left = '-100%';
+            // //1.대상이동하기
+            // slide.style.left = '-100%';
+            // slide2.style.left = '-100%';
             //2.트랜지션주기
             slide.style.transition = 
                 TIME_SLIDE+'ms ease-in-out';
+            slide2.style.transition = 
+                TIME_SLIDE+'ms ease-in-out';
+
+            // 안보이게 하기
+            slide.style.opacity = '0.4';
+            slide2.style.opacity = '0.4';
+
             // 이동시간 후 맨앞li 잘라서 맨뒤로 이동하기
             // appendChild(요소)
             setTimeout(() => {
                 // 3.맨앞li 맨뒤로 이동
                 slide.appendChild(eachOne[0]);
-                // 4.slide left값 0
-                slide.style.left = '0';
+                slide2.appendChild(eachOne2[0]);
+                // // 4.slide left값 0
+                // slide.style.left = '0';
+                // slide2.style.left = '0';
                 // 5.트랜지션 없애기
                 slide.style.transition = 'none';
+                slide2.style.transition = 'none';
+
+                slide.style.opacity = '1';
+                slide2.style.opacity = '1';
+                
             }, TIME_SLIDE);
         } ////// if //////////////
         else{ // 왼쪽버튼
@@ -91,11 +108,19 @@ function loadFc() {
             // 놈.놈.놈 -> insertBefore(넣을놈,넣을놈전놈)
             slide.insertBefore(
                 eachOne[eachOne.length-1], eachOne[0]);
+            slide2.insertBefore(
+                eachOne2[eachOne2.length-1], eachOne2[0]);
             // 2. left값 -100% 만들기 : 들어올 준비 위치!
-            slide.style.left = '-100%';
+            // slide.style.left = '-100%';
+            // slide2.style.left = '-100%';
             // 3. 트랜지션 없애기
             slide.style.transition = 'none';
+            slide2.style.transition = 'none';
             
+            // 안보이게 하기
+            slide.style.opacity = '0.4';
+            slide2.style.opacity = '0.4';
+
             // 같은 left값을 동시에 변경하면 효과가 없음!
             // 비동기적으로 처리해야함!
             // -> setTimeout으로 싸주기!
@@ -103,18 +128,27 @@ function loadFc() {
 
             setTimeout(() => {
                 // 4. left값 0으로 들어오기
-                slide.style.left = '0';
+                // slide.style.left = '0';
+                // slide2.style.left = '0';
                 
                 // 5. 트랜지션주기
                 slide.style.transition = 
                     TIME_SLIDE+'ms ease-in-out';
- 
+                slide2.style.transition = 
+                    TIME_SLIDE+'ms ease-in-out';
+
+                slide.style.opacity = '1';
+                slide2.style.opacity = '1';
+                    
             }, 0);
 
 
         } /////// else //////////////
 
     } ////////// goSlide 함수 /////////
+
+
+
 
 
 } //////////////// loadFn 함수 ///////////////
