@@ -122,6 +122,11 @@
     transform: translateY(-50%);
 }
 
+.in-box>.part-box>.banner_text{
+    width: 100%;
+    height: 100%;
+}
+
 /* /////////////////////////////////////////////////////////////////////////////////////////// */
 
 .second-area{
@@ -150,7 +155,7 @@
 
 /* Footer CSS Area */
 .footer-area_1{
-    padding-top: 18vh;
+    padding-top: 13vh;
     height: 25vh;
 }
 
@@ -164,27 +169,69 @@
 }
 
 .footer-area_2{
-    margin-top: 8vh;
-    margin-bottom: 20vh;
+    padding-top: 12vh;
     height: 20vh;
 }
 
 .caption_2{
     width: 100%;
     height: 100%;
-    background: white;
+    background: rgba(16, 16, 16, 0.80);
+    border-radius: 20px;
+    border: 1px solid #3f3f3f;
+    box-shadow: 3px 3px 10px #1e1e1e7b;
 }
 .caption_3{
     width: 100%;
     height: 100%;
-    background: white;
+    background: rgba(16, 16, 16, 0.80);
+    border-radius: 20px;
+    border: 1px solid #3f3f3f;
+    box-shadow: 3px 3px 10px #1e1e1e7b;
 }
 .caption_4{
     width: 100%;
     height: 100%;
-    background: white;
+    background: rgba(16, 16, 16, 0.80);
+    border-radius: 20px;
+    border: 1px solid #3f3f3f;
+    box-shadow: 3px 3px 10px #1e1e1e7b;
+}
+.caption_2>h2{
+
+    color: red;
 }
 
+/* ///////////////////////////////////////////////////////////////////////////////////////////// */
+
+.page-indic{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    bottom: 33%;
+    right: 11%;
+}
+
+.page-indic li{
+    position: absolute;
+    width: 20px;
+    height: 60px;
+}
+
+.page-indic li img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.page-indic li img:last-child {
+    opacity: 0;
+}
+
+.page-indic li.on img:last-child{
+    opacity: 1;
+}
 
 /* Footer CSS Area */
 

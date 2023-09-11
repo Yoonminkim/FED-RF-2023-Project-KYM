@@ -23,35 +23,33 @@ function loadFc() {
         let eachOne = slide.querySelectorAll("li");
         let eachOne2 = slide2.querySelectorAll("li");
 
-        console.log("eachOne 길이는?", eachOne.length);
-
         if (isRight) {
             rightSlide();
         } 
         else {
-            slide.style.left = "-1%";
-            slide2.style.left = "-1%";
 
             slide.style.opacity = "0.8";
             slide2.style.opacity = "0.8";
-
-            slide.insertBefore(eachOne[eachOne.length - 1], eachOne[0]);
-            slide2.insertBefore(eachOne2[eachOne2.length - 1], eachOne2[0]);
             
-            slide.style.transition = "none";
-            slide2.style.transition = "none";
+            slide.style.transition = TIME_SLIDE + "ms ease-in-out";
+            slide2.style.transition = TIME_SLIDE + "ms ease-in-out";
+
             
             setTimeout(() => {
-                slide.style.left = '0';
-                slide2.style.left = '0';
+                slide.insertBefore(eachOne[eachOne.length - 1], eachOne[0]);
+                slide2.insertBefore(eachOne2[eachOne2.length - 1], eachOne2[0]);
 
-                slide.style.transition = TIME_SLIDE + "ms ease-in-out";
-                slide2.style.transition = TIME_SLIDE + "ms ease-in-out";
                 
                 slide.style.opacity = "1";
                 slide2.style.opacity = "1";
-            }, 0);
+                
+                slide.style.transition = "none";
+                slide2.style.transition = "none";
+                
+            }, TIME_SLIDE);
         }
+
+        clearAuto();
     }
 
     function rightSlide() {
@@ -59,8 +57,8 @@ function loadFc() {
         slide.style.left = "-1%";
         slide2.style.left = "-1%";
 
-        slide.style.opacity = "0.8";
-        slide2.style.opacity = "0.8";
+        slide.style.opacity = "0.7";
+        slide2.style.opacity = "0.7";
 
         slide.style.transition = TIME_SLIDE + "ms ease-in-out";
         slide2.style.transition = TIME_SLIDE + "ms ease-in-out";
@@ -71,7 +69,6 @@ function loadFc() {
 
             slide.style.left = '0';
             slide2.style.left = '0';
-
             slide.style.opacity = "1";
             slide2.style.opacity = "1";
 
@@ -81,7 +78,20 @@ function loadFc() {
         }, TIME_SLIDE);
     }
 
-    setInterval(() => {
-        abtn[1].click();
-    }, 5000);
+    let autoI;
+    let autoT;
+
+    function slideAuto(){
+        autoI = setInterval(() => {
+            rightSlide();
+        }, 4000);
+    }
+
+    slideAuto();
+
+    function clearAuto() {
+        clearInterval(autoI);
+        clearTimeout(autoT);
+        autoT = setTimeout(slideAuto,5000);
+    }
 }
