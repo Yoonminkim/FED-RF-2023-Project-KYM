@@ -147,6 +147,10 @@ function loadFc() {
 
     } ////////// goSlide 함수 /////////
 
+    setInterval(() => {
+        abtn[1].click();
+    }, 5000);
+
 
 
 
