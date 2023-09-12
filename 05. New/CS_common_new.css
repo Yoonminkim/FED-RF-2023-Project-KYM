@@ -50,6 +50,12 @@ body{
     object-fit: fill;
 }
 
+ul, ol{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
 .clb::after {
     content: '';
     display: block;

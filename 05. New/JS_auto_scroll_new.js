@@ -10,8 +10,7 @@ setTimeout(()=>{window.scrollTo(0,0)},200);
 window.addEventListener('wheel', wheelFn);
 window.addEventListener('DOMContentLoaded', loadFn);
 
-const page = qsa('.page');
-const indic = qsa(".page-indic li");
+const indic = document.querySelectorAll('.page-indic li');
 
 function loadFn(){
 
@@ -20,7 +19,7 @@ function loadFn(){
     total_page = qsa('.page').length;
     console.log('전체페이지수 : ', total_page);
 
-    page.forEach((ele,idx)=>ele.setAttribute('data-seq',idx));
+    console.log('indic', indic);
 
 }
 
@@ -41,9 +40,14 @@ function wheelFn(e){
     console.log('페이지번호:', pg_num);
     window.scrollTo(0,window.innerHeight*pg_num);
 
+    chgIndic(pg_num);
 }
 
 function chgIndic(pg_num){
-    let nowSeq = page.qsa('.page')[pg_num?1:0].getAttribute('data-seq');
-    console.log('현재 순번 :', nowSeq);
+
+    indic.forEach((ele,idx)=>{
+        if(idx==pg_num) ele.classList.add('on');
+        else ele.classList.remove('on');
+    });
+
 }

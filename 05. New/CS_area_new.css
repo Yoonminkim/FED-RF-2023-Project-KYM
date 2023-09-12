@@ -198,23 +198,28 @@
     box-shadow: 3px 3px 10px #1e1e1e7b;
 }
 .caption_2>h2{
-
     color: red;
 }
 
 /* ///////////////////////////////////////////////////////////////////////////////////////////// */
 
+.indic-hold{
+    position: sticky;
+    z-index: 99;
+    top: 90%;
+}
+
 .page-indic{
-    position: absolute;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    bottom: 33%;
-    right: 11%;
+    position: absolute;
+    gap: 15px 0;
+    bottom: 10%;
+    right: 10%;
 }
 
 .page-indic li{
-    position: absolute;
+    position: relative;
     width: 20px;
     height: 60px;
 }
