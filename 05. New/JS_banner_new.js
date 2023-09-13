@@ -11,6 +11,16 @@ function loadFc() {
     const slide = qs(".slide1");
     const slide2 = qs(".slide2");
 
+const banTxt = ['aa','bb','cc','dd'];
+const banTxt2 = ['ee','ff','gg','hh'];
+
+    slide.querySelectorAll('li').forEach((ele,idx)=>{
+        ele.innerHTML += `<h2>${banTxt[idx]}</h2>`;
+    })
+    slide2.querySelectorAll('li').forEach((ele,idx)=>{
+        ele.innerHTML += `<h2>${banTxt2[idx]}</h2>`;
+    })
+
     abtn.forEach((ele) => addEvt(ele, "click", goSlide));
 
     function goSlide() {
@@ -72,8 +82,8 @@ function loadFc() {
             slide.style.opacity = "1";
             slide2.style.opacity = "1";
 
-            slide.style.transition = "none";
-            slide2.style.transition = "none";
+            // slide.style.transition = "none";
+            // slide2.style.transition = "none";
 
         }, TIME_SLIDE);
     }
