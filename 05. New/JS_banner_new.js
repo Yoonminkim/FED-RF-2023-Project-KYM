@@ -11,9 +11,6 @@ function loadFc() {
     const slide = qs(".slide1");
     const slide2 = qs(".slide2");
 
-const banTxt = ['aa','bb','cc','dd'];
-const banTxt2 = ['ee','ff','gg','hh'];
-
     slide.querySelectorAll('li').forEach((ele,idx)=>{
         ele.innerHTML += `<h2>${banTxt[idx]}</h2>`;
     })
