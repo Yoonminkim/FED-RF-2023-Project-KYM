@@ -137,6 +137,9 @@
     height: 100%;
 }
 
+.banbox{
+}
+
 /* /////////////////////////////////////////////////////////////////////////////////////////// */
 
 .second-area{
@@ -228,8 +231,8 @@
 
 .page-indic li{
     position: relative;
-    width: 20px;
-    height: 60px;
+    width: 10px;
+    height: 40px;
 }
 
 .page-indic li img{

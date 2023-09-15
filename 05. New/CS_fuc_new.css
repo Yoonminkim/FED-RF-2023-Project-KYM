@@ -25,8 +25,7 @@
     text-align: center;
 }
 
-
-.menu-Btn-4, .menu-Btn-5{
+.menu-Btn-5{
     width: 100%;
     height: 100%;
     color: #fff;
@@ -38,6 +37,22 @@
     text-size-adjust: auto;
     overflow: hidden;
     text-align: center;
+}
+
+.menu-Btn-4{
+    width: 100%;
+    height: 100%;
+    color: #fff;
+    font-size: 1.2rem;
+    background-image: linear-gradient(to right, #1a1c23, #303c49);
+    /* opacity: .9; */
+    white-space: nowrap;
+    text-size-adjust: auto;
+    overflow: hidden;
+    text-align: center;
+    outline: none;
+    border: 1px dotted #00000000;
+    border-radius: 40px;
 }
 
 /* Button & Text & Image Area */

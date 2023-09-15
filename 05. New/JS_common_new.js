@@ -7,5 +7,4 @@ const ec = (x) => document.getElementsByClassName(x);
 
 // addEvent 함수
 // ele - 요소, evt - 이벤트, fn - 함수
-const addEvt = (ele, evt, fn) => 
-ele.addEventListener(evt, fn);
+const addEvt = (ele, evt, fn) => ele.addEventListener(evt, fn);

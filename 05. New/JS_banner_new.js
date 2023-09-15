@@ -8,11 +8,11 @@ function loadFc() {
     console.log("로딩완료!");
 
     const abtn = qsa(".btn_check");
-    const slide = qs(".slide1");
+    const slide1 = qs(".slide1");
     const slide2 = qs(".slide2");
 
-    slide.querySelectorAll('li').forEach((ele,idx)=>{
-        ele.innerHTML += `<h2>${banTxt[idx]}</h2>`;
+    slide1.querySelectorAll('li').forEach((ele,idx)=>{
+        ele.innerHTML += `<h2>${banTxt1[idx]}</h2>`;
     })
     slide2.querySelectorAll('li').forEach((ele,idx)=>{
         ele.innerHTML += `<h2>${banTxt2[idx]}</h2>`;
@@ -27,7 +27,7 @@ function loadFc() {
 
         let isRight = this.classList.contains("next");
 
-        let eachOne = slide.querySelectorAll("li");
+        let eachOne1 = slide1.querySelectorAll("li");
         let eachOne2 = slide2.querySelectorAll("li");
 
         if (isRight) {
@@ -35,22 +35,21 @@ function loadFc() {
         } 
         else {
 
-            slide.style.opacity = "0.8";
+            slide1.style.opacity = "0.8";
             slide2.style.opacity = "0.8";
             
-            slide.style.transition = TIME_SLIDE + "ms ease-in-out";
+            slide1.style.transition = TIME_SLIDE + "ms ease-in-out";
             slide2.style.transition = TIME_SLIDE + "ms ease-in-out";
 
             
             setTimeout(() => {
-                slide.insertBefore(eachOne[eachOne.length - 1], eachOne[0]);
+                slide1.insertBefore(eachOne1[eachOne.length - 1], eachOne[0]);
                 slide2.insertBefore(eachOne2[eachOne2.length - 1], eachOne2[0]);
-
                 
-                slide.style.opacity = "1";
+                slide1.style.opacity = "1";
                 slide2.style.opacity = "1";
                 
-                slide.style.transition = "none";
+                slide1.style.transition = "none";
                 slide2.style.transition = "none";
                 
             }, TIME_SLIDE);
@@ -61,26 +60,23 @@ function loadFc() {
 
     function rightSlide() {
 
-        slide.style.left = "-1%";
+        slide1.style.left = "-1%";
         slide2.style.left = "-1%";
 
-        slide.style.opacity = "0.7";
+        slide1.style.opacity = "0.7";
         slide2.style.opacity = "0.7";
 
-        slide.style.transition = TIME_SLIDE + "ms ease-in-out";
+        slide1.style.transition = TIME_SLIDE + "ms ease-in-out";
         slide2.style.transition = TIME_SLIDE + "ms ease-in-out";
 
         setTimeout(() => {
-            slide.appendChild(slide.querySelectorAll("li")[0]);
+            slide1.appendChild(slide1.querySelectorAll("li")[0]);
             slide2.appendChild(slide2.querySelectorAll("li")[0]);
 
-            slide.style.left = '0';
+            slide1.style.left = '0';
             slide2.style.left = '0';
-            slide.style.opacity = "1";
+            slide1.style.opacity = "1";
             slide2.style.opacity = "1";
-
-            // slide.style.transition = "none";
-            // slide2.style.transition = "none";
 
         }, TIME_SLIDE);
     }
