@@ -173,7 +173,7 @@
 }
 
 .fade{
-    animation: fade .2s ease-in forwards;
+    animation: fade 0.2s ease-in forwards;
 }
 
 @keyframes fade {

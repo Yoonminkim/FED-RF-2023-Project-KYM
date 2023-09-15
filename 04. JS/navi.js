@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 
 // 버튼 대상
 const btnMenu = qs('.menu-Btn-1');
@@ -22,3 +23,10 @@ function showMenu(){
 
 
 } //////// showMenu //////////////////
+=======
+function menushow(){
+    
+    
+
+}
+>>>>>>> Stashed changes
