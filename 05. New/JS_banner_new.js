@@ -43,7 +43,7 @@ function loadFc() {
 
             
             setTimeout(() => {
-                slide1.insertBefore(eachOne1[eachOne.length - 1], eachOne[0]);
+                slide1.insertBefore(eachOne1[eachOne1.length - 1], eachOne1[0]);
                 slide2.insertBefore(eachOne2[eachOne2.length - 1], eachOne2[0]);
                 
                 slide1.style.opacity = "1";
