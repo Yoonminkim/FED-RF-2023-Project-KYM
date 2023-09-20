@@ -1,5 +1,3 @@
-import { whiskeyinfo } from "../JS_Whisky_data_new";
-
 const grdpg = qs('.gridbox');
 
 let hcode = '';
