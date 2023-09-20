@@ -98,3 +98,21 @@
     border-radius: 0 3px 3px 0;
     user-select: none;
   }
+
+
+/* ***************************************************************** */
+
+.caption_1>h2{
+    position: relative;
+    font-size: max(12px, 25px);
+    text-align: center;
+    top: 60%;
+    color: #fff;
+}
+
+.c2-logo{
+    position: absolute;
+    transform: scale(.5);
+    margin: 5% 0% 0% 30%;
+
+}
