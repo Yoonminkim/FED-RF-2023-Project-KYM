@@ -12,10 +12,10 @@ function loadFc() {
     const slide2 = qs(".slide2");
 
     slide1.querySelectorAll('li').forEach((ele,idx)=>{
-        ele.innerHTML += `<h2>${banTxt1[idx]}</h2>`;
+        ele.innerHTML += `<h2 class="btxt">${banTxt1[idx]}</h2>`;
     })
     slide2.querySelectorAll('li').forEach((ele,idx)=>{
-        ele.innerHTML += `<h2>${banTxt2[idx]}</h2>`;
+        ele.innerHTML += `<h2 class="btxt">${banTxt2[idx]}</h2>`;
     })
 
     abtn.forEach((ele) => addEvt(ele, "click", goSlide));
