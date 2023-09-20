@@ -35,8 +35,10 @@ for(let i=0;i<whiskyinfo.length;i++){
     hcode +=
     `<ul>
         <li class="grid-item">
-            <img src="../../02. image/spsd/spsd_${i}.jpg">
-            <h3 class="whiskey-name" >${whiskyinfo[i].name}</h3>
+            <a herf="#">
+                <img src="../../02. image/spsd/spsd_${i}.jpg">
+                <h3 class="whiskey-name" >${whiskyinfo[i].name}</h3>
+            </a>
         </li>
     </ul>`
 }
