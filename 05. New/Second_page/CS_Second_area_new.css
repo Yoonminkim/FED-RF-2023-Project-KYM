@@ -94,7 +94,7 @@ ul, ol{
 
 .gridbox ul{
     position: relative;
-    aspect-ratio: 1/1.5;
+    aspect-ratio: 1/1.2;
     width: 100%;
     height: 100%;
 }
