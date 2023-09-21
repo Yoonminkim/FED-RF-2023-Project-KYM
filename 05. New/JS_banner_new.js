@@ -87,7 +87,7 @@ function loadFc() {
     function slideAuto(){
         autoI = setInterval(() => {
             rightSlide();
-        }, 4000);
+        }, 5000);
     }
 
     slideAuto();

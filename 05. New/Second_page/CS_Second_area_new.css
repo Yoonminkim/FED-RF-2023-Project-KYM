@@ -42,6 +42,30 @@ html, body, h1, h2, h3, h4, h5, h6, ul, li, ol{
     object-fit: fill;
 }
 
+.btn_sticky{
+    position: absolute;
+    width: 100%;
+    height: 250vh;
+}
+
+#btn_home{
+    position: sticky;
+    top: 80%;
+    left: 90%;
+    width: 80px;
+    height: 80px;
+    font-size: 30px;
+    background: #f1f1f1;
+    border: 1px solid #474747;
+    color: #414141;
+    border-radius: 50%;
+}
+
+#btn_home:hover{
+    cursor: pointer;
+    transform: scale(1.2);
+}
+
 .second-body{
     background: #ffffff;
 }
@@ -77,12 +101,12 @@ ul, ol{
     margin-bottom: 5vh;
 }
 
-.menuimg img{
+.menuimg video{
     position: relative;
     width: 100%;
     height: 25vh;
     object-fit: cover;
-    object-position: 10% 60%;
+    object-position: 10% 15%;
 }
 
 .gridbox{
@@ -90,6 +114,8 @@ ul, ol{
     grid-template-columns: repeat(4,1fr);
     grid-row-gap: 80px;
     grid-column-gap: 50px;
+    height: 100%;
+    margin-bottom: 8%;
 }
 
 .gridbox ul{
@@ -120,4 +146,39 @@ ul, ol{
 
 
 /* ************************************************************ */
+/* footerbox */
 
+.footer-box{
+    position: relative;
+    width: 100%;
+    height: 15vh;
+    background: #474747;
+}
+
+.my_info{
+    position: relative;
+    top: 10%;
+}
+
+.my_info p{
+    font-size: 20px;
+    color: white;
+    font-family: 'Bebas Neue', sans-serif;
+}
+
+.info_icon{
+    display: flex;
+}
+
+.info_icon ul{
+    display: flex;
+    gap: 0 15px;
+}
+
+.info_icon a{
+    position: relative;
+    top: 50%;
+    font-size: 30px;
+    text-decoration: none;
+    color: white;
+}

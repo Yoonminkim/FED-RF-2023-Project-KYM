@@ -47,3 +47,9 @@ grdpg.innerHTML = `${hcode}`;
 
 console.log(hcode);
 console.log(whiskyinfo);
+
+const btn_up = qs('#btn_home');
+
+addEvt(btn_up,'click',()=>{
+    setTimeout(()=>{window.scrollTo(0,0)},200);
+});

@@ -2,7 +2,7 @@
 const bText1 = '\u00a0'+ 'What about Whiskey';
 const bText2 = '\u00a0'+ 'What is Single Molt';
 const bText3 = '\u00a0'+ 'Do you know Peat?';
-const bText4 = '\u00a0'+ 'More Infomation';
+const bText4 = '\u00a0'+ 'More Information';
 
 const banTxt1 = [   // 왼쪽 /////////////////////////////////////////
     bText1, // 배너1에 들어갈 내용

@@ -104,15 +104,56 @@
 
 .caption_1>h2{
     position: relative;
+    font-size: max(12px, 35px);
+    text-align: center;
+    top: 20%;
+    color: #fff;
+}
+.caption_1>h4{
+    position: relative;
+    font-size: max(12px, 20px);
+    text-align: center;
+    top: 20%;
+    color: #fff;
+}
+
+.caption_2>h2{
+    position: relative;
     font-size: max(12px, 25px);
     text-align: center;
-    top: 60%;
+    top: 50%;
+    color: #fff;
+}
+
+.caption_3>h2{
+    position: relative;
+    font-size: max(12px, 25px);
+    text-align: center;
+    top: 50%;
+    color: #fff;
+}
+
+.caption_4>h2{
+    position: relative;
+    font-size: max(12px, 25px);
+    text-align: center;
+    top: 50%;
     color: #fff;
 }
 
 .c2-logo{
     position: absolute;
-    transform: scale(.5);
-    margin: 5% 0% 0% 30%;
-
+    transform: scale(.8);
+    margin: 6% 0% 0% 22%;
+}
+.c3-logo{
+    position: absolute;
+    transform: scale(.4);
+    margin: -5% 0% 0% 30%;
+}
+.c4-logo{
+    position: absolute;
+    border-radius: 500px;
+    transform: scale(.3);
+    margin: -12% 0% 0% 24%;
 }
