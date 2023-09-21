@@ -24,7 +24,14 @@
     color:rgb(68, 70, 113);
     transform: scale(1.02);
     cursor: pointer;
+    animation: button-efc 1s linear forwards
  }
+ .menu-Btn-5:hover{
+    color:rgb(68, 70, 113);
+    transform: scale(1.02);
+    cursor: pointer;
+    animation: button-efc 1s linear forwards
+   }
 
  .menu{
     z-index: 99;
@@ -32,4 +39,17 @@
     width: 200px;
     height: 100vh;
     background-color: black;
+ }
+
+ @keyframes button-efc {
+
+   from{
+      background: #1a1c23;
+      color:rgb(68, 70, 113);
+   }
+   to{
+      background: #303c49;
+      color: #e6e6e6;
+   }
+   
  }

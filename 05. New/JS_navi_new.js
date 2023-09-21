@@ -22,3 +22,19 @@ function showMenu(){
 
 
 } //////// showMenu //////////////////
+
+
+const mapbtn = qs('.menu-Btn-2');
+const smap = qs('.s-map');
+const cbtn = qs('.cbtn');
+
+console.log(mapbtn, smap, cbtn);
+
+addEvt(mapbtn, 'click', ()=>{
+    smap.classList.add('on');
+    document.body.classList.add('on');
+});
+addEvt(cbtn, 'click', ()=>{
+    smap.classList.remove('on');
+    document.body.classList.remove('on');
+});

@@ -55,8 +55,8 @@ html, body, h1, h2, h3, h4, h5, h6, ul, li, ol{
     width: 80px;
     height: 80px;
     font-size: 30px;
-    background: #f1f1f1;
-    border: 1px solid #474747;
+    background-image: linear-gradient(#ffffff, #bcb8cc);
+    border: 1px solid #e9e9e9;
     color: #414141;
     border-radius: 50%;
 }

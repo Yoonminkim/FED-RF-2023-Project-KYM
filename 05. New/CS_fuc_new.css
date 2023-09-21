@@ -29,21 +29,7 @@
     width: 100%;
     height: 100%;
     color: #fff;
-    font-size: 1.2rem;
-    border: 1px solid rgb(92, 92, 92);
-    border-radius: 30px;
-    background: #444;
-    white-space: nowrap;
-    text-size-adjust: auto;
-    overflow: hidden;
-    text-align: center;
-}
-
-.menu-Btn-4{
-    width: 100%;
-    height: 100%;
-    color: #fff;
-    font-size: 25px;
+    font-size: 30px;
     background-image: linear-gradient(to right, #1a1c23, #303c49);
     /* opacity: .9; */
     white-space: nowrap;
@@ -51,6 +37,24 @@
     overflow: hidden;
     text-align: center;
     outline: none;
+    font-family: 'Bebas Neue', sans-serif;
+    border: 1px dotted #00000000;
+    border-radius: 40px;
+}
+
+.menu-Btn-4{
+    width: 100%;
+    height: 100%;
+    color: #fff;
+    font-size: 30px;
+    background-image: linear-gradient(to right, #1a1c23, #303c49);
+    /* opacity: .9; */
+    white-space: nowrap;
+    text-size-adjust: auto;
+    overflow: hidden;
+    text-align: center;
+    outline: none;
+    font-family: 'Bebas Neue', sans-serif;
     border: 1px dotted #00000000;
     border-radius: 40px;
 }
@@ -104,22 +108,24 @@
 
 .caption_1>h2{
     position: relative;
-    font-size: max(12px, 35px);
+    font-size: max(12px, 50px);
     text-align: center;
     top: 20%;
+    font-family: 'Bebas Neue', sans-serif;
     color: #fff;
 }
 .caption_1>h4{
     position: relative;
-    font-size: max(12px, 20px);
+    font-size: max(12px, 25px);
     text-align: center;
-    top: 20%;
+    top: 10%;
+    font-family: 'Bebas Neue', sans-serif;
     color: #fff;
 }
 
 .caption_2>h2{
     position: relative;
-    font-size: max(12px, 25px);
+    font-size: max(12px, 20px);
     text-align: center;
     top: 50%;
     color: #fff;
@@ -127,7 +133,7 @@
 
 .caption_3>h2{
     position: relative;
-    font-size: max(12px, 25px);
+    font-size: max(12px, 20px);
     text-align: center;
     top: 50%;
     color: #fff;
@@ -135,7 +141,7 @@
 
 .caption_4>h2{
     position: relative;
-    font-size: max(12px, 25px);
+    font-size: max(12px, 20px);
     text-align: center;
     top: 50%;
     color: #fff;
@@ -155,5 +161,12 @@
     position: absolute;
     border-radius: 500px;
     transform: scale(.3);
-    margin: -12% 0% 0% 24%;
+    margin: -12% 0% 0% 23%;
+}
+
+
+/* *************************************************************************************** */
+
+.menu-Btn-2{
+    
 }

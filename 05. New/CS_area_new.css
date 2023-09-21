@@ -304,3 +304,37 @@
         opacity: 1;
     }
 }
+
+/* *************************************************************************************** */
+
+.scotch-map{
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+}
+
+.s-map{
+    position: absolute;
+    top: calc(40%/2);
+    left: calc(67%/2);
+    width: 600px;
+    height: 600px;
+    opacity: 0;
+    z-index: 99999999;
+}
+
+.s-map.on{
+    opacity: 1;
+}
+
+body.on::after {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: #000;
+    opacity: 0.7;
+    z-index: 99;
+}
