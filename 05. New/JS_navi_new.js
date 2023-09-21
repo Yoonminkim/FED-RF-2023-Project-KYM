@@ -48,10 +48,8 @@ addEvt(cbtn, 'click', ()=>{
 console.log(slide[0]);
 
 const mediaQ = window.matchMedia("(max-width: 850px)")
-
 mediaQ.addListener((e) => {
-let nowWidth = e.media;
-if(e.media < nowWidth){
+if(e.matches){
 
     console.log(e.media);
 
@@ -68,3 +66,27 @@ else{
     slide[1].classList.remove('col-0');
 }
 });
+
+let timer;
+let check;
+
+// window.addEventListener('resize', function(){
+//     console.log('resize!');
+
+//     this.clearInterval(timer);
+//     timer = this.setInterval(function(){
+//         console.log('check-size');
+//         if(window.innerWidth < 850){
+//             slide[0].classList.remove('col-4');
+//             slide[0].classList.add('col-8');
+//             slide[1].classList.remove('col-4');
+//             slide[1].classList.add('col-0');
+//         }
+//         else{
+//             slide[0].classList.add('col-4');
+//             slide[0].classList.remove('col-8');
+//             slide[1].classList.add('col-4');
+//             slide[1].classList.remove('col-0');
+//         }
+//     },1000);
+// });
