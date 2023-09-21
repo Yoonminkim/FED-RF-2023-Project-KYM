@@ -48,7 +48,7 @@ html{
 
 /* background Image Set */
 .main-body{
-    background: #222222 url(../02.\ image/main_bg_img_black_more.png) no-repeat fixed center/200%;
+    background: #222222 url(../02.\ image/main_bg_img_black_more.png) fixed center/200%;
     object-fit: fill;
 }
 

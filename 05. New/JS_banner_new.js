@@ -98,3 +98,44 @@ function loadFc() {
         autoT = setTimeout(slideAuto,5000);
     }
 }
+
+const mapbtn1 = qs('.menu-Btn-2');
+const smap1 = qs('.s-map');
+const cbtn1 = qs('.cbtn');
+const slide = qsa('.banbox');
+
+console.log(slide);
+console.log(mapbtn1, smap1, cbtn1);
+
+addEvt(mapbtn1, 'click', ()=>{
+    smap1.classList.add('on');
+    cbtn1.classList.add('on');
+    document.body.classList.add('on');
+});
+addEvt(cbtn, 'click', ()=>{
+    smap1.classList.remove('on');
+    cbtn1.classList.remove('on');
+    document.body.classList.remove('on');
+});
+
+console.log(slide[0]);
+
+const mediaQ = window.matchMedia("(max-width: 850px)")
+mediaQ.addListener((e) => {
+if(e.matches){
+
+    console.log(e.media);
+
+    slide[0].classList.remove('col-4');
+    slide[0].classList.add('col-8');
+    slide[1].classList.remove('col-4');
+    slide[1].classList.add('col-0');
+
+}
+else{
+    slide[0].classList.add('col-4');
+    slide[0].classList.remove('col-8');
+    slide[1].classList.add('col-4');
+    slide[1].classList.remove('col-0');
+}
+});

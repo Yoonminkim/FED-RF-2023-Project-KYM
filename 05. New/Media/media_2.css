@@ -1,0 +1,308 @@
+
+@media screen and (max-width: 1500px){
+    
+    .btn_sticky{
+        position: absolute;
+        width: 100%;
+        height: 180vh;
+    }
+    
+    #btn_home{
+        position: sticky;
+        top: 80%;
+        left: 90%;
+        width: 80px;
+        height: 80px;
+        font-size: 30px;
+        background-image: linear-gradient(#ffffff, #bcb8cc);
+        border: 1px solid #e9e9e9;
+        color: #414141;
+        border-radius: 50%;
+    }
+    
+}
+
+
+@media screen and (max-width: 1300px){
+    
+    .s-map{
+        position: absolute;
+        top: calc(40%/2);
+        left: calc(55%/2);
+        width: 600px;
+        height: 600px;
+        opacity: 0;
+        object-fit: fill;
+        z-index: 99999999;
+    }
+
+    .cbtn{
+        position: absolute;
+        top: 20%;
+        right: 10%;
+        font-size: 40px;
+        font-weight: bold;
+        color: white;
+        background-color: transparent;
+        border: none;
+        opacity: 0;
+        cursor: pointer;
+        z-index: 999999999;
+    }
+    
+}
+
+@media screen and (max-width: 1200px){
+    
+    .btn_sticky{
+        position: absolute;
+        width: 100%;
+        height: 250vh;
+    }
+    
+    #btn_home{
+        position: sticky;
+        top: 80%;
+        left: 85%;
+        width: 80px;
+        height: 80px;
+        font-size: 30px;
+        background-image: linear-gradient(#ffffff, #bcb8cc);
+        border: 1px solid #e9e9e9;
+        color: #414141;
+        border-radius: 50%;
+    }
+
+    .gridbox{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        grid-row-gap: 80px;
+        grid-column-gap: 50px;
+        height: 100%;
+        margin-bottom: 8%;
+    }
+
+    .sub-menu a:hover + #sidetext{
+        margin: 2%;
+        display: block;
+    }
+
+}
+
+/*  1100px 이하 시 미디어 쿼리 */
+
+@media screen and (max-width: 1100px){
+    
+    .s-map{
+        position: absolute;
+        top: calc(40%/2);
+        left: calc(55%/2);
+        width: 400px;
+        height: 400px;
+        opacity: 0;
+        object-fit: fill;
+        z-index: 99999999;
+    }
+
+    .cbtn{
+        position: absolute;
+        top: 20%;
+        right: 20%;
+        font-size: 40px;
+        font-weight: bold;
+        color: white;
+        background-color: transparent;
+        border: none;
+        opacity: 0;
+        cursor: pointer;
+        z-index: 999999999;
+    }
+
+}
+
+@media screen and (max-width: 1000px){
+    
+    .btn_sticky{
+        position: absolute;
+        width: 100%;
+        height: 230vh;
+    }
+    
+    #btn_home{
+        position: sticky;
+        top: 80%;
+        left: 85%;
+        width: 80px;
+        height: 80px;
+        font-size: 30px;
+        background-image: linear-gradient(#ffffff, #bcb8cc);
+        border: 1px solid #e9e9e9;
+        color: #414141;
+        border-radius: 50%;
+    }
+
+    .gridbox{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        grid-row-gap: 80px;
+        grid-column-gap: 50px;
+        height: 100%;
+        margin-bottom: 8%;
+    }
+
+}
+
+
+@media screen and (max-width: 850px){
+    
+    .btn_sticky{
+        position: absolute;
+        width: 100%;
+        height: 200vh;
+    }
+    
+    #btn_home{
+        position: sticky;
+        top: 80%;
+        left: 85%;
+        width: 80px;
+        height: 80px;
+        font-size: 30px;
+        background-image: linear-gradient(#ffffff, #bcb8cc);
+        border: 1px solid #e9e9e9;
+        color: #414141;
+        border-radius: 50%;
+    }
+
+    .gridbox{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        grid-row-gap: 80px;
+        grid-column-gap: 50px;
+        height: 100%;
+        margin-bottom: 8%;
+    }
+    .s-map{
+        position: absolute;
+        top: calc(40%/2);
+        left: calc(55%/2);
+        width: 300px;
+        height: 300px;
+        opacity: 0;
+        object-fit: fill;
+        z-index: 99999999;
+    }
+
+    .cbtn{
+        position: absolute;
+        top: 20%;
+        right: 10%;
+        font-size: 40px;
+        font-weight: bold;
+        color: white;
+        background-color: transparent;
+        border: none;
+        opacity: 0;
+        cursor: pointer;
+        z-index: 999999999;
+    }
+
+    .footer-box{
+        position: relative;
+        width: 100%;
+        height: 20vh;
+        background: #474747;
+    }
+    
+    .my_info{
+        position: relative;
+        top: 10%;
+    }
+    
+    .my_info p{
+        font-size: 18px;
+        color: white;
+        font-family: 'Bebas Neue', sans-serif;
+    }
+    
+    .info_icon{
+        display: flex;
+    }
+    
+    .info_icon ul{
+        display: flex;
+        flex-direction: column;
+        gap: 18px;
+    }
+    
+    .info_icon a{
+        position: relative;
+        top: 50%;
+        font-size: 30px;
+        text-decoration: none;
+        color: white;
+    }
+
+}
+
+
+/* 550px 이하 시 미디어 쿼리 */
+@media screen and (max-width: 550px){
+    
+    .s-map{
+        position: absolute;
+        top: calc(40%/2);
+        left: calc(50%/2);
+        width: 250px;
+        height: 250px;
+        opacity: 0;
+        object-fit: fill;
+        z-index: 99999999;
+    }
+
+    .cbtn{
+        position: absolute;
+        top: 20%;
+        right: 10%;
+        font-size: 40px;
+        font-weight: bold;
+        color: white;
+        background-color: transparent;
+        border: none;
+        opacity: 0;
+        cursor: pointer;
+        z-index: 999999999;
+    }
+
+}
+
+
+/* 450px 이하 시 미디어 쿼리 */
+@media screen and (max-width: 450px){
+    
+    .s-map{
+        position: absolute;
+        top: calc(40%/2);
+        left: calc(30%/2);
+        width: 220px;
+        height: 220px;
+        opacity: 0;
+        object-fit: fill;
+        z-index: 99999999;
+    }
+
+    .cbtn{
+        position: absolute;
+        top: 20%;
+        right: 10%;
+        font-size: 40px;
+        font-weight: bold;
+        color: white;
+        background-color: transparent;
+        border: none;
+        opacity: 0;
+        cursor: pointer;
+        z-index: 999999999;
+    }
+
+}
