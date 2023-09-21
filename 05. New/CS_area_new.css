@@ -103,6 +103,7 @@
     flex-shrink: 0;
     flex-basis: 100%;
 }
+
 .in-box>.part-box ul li h2{
     position: absolute;
     bottom: 0;
@@ -320,6 +321,7 @@
     width: 600px;
     height: 600px;
     opacity: 0;
+    object-fit: fill;
     z-index: 99999999;
 }
 
@@ -336,5 +338,29 @@ body.on::after {
     height: 100vh;
     background-color: #000;
     opacity: 0.7;
-    z-index: 99;
+    z-index: 999999;
+}
+
+.cbtn{
+    position: absolute;
+    top: 20%;
+    right: 10%;
+    font-size: 40px;
+    font-weight: bold;
+    color: white;
+    background-color: transparent;
+    border: none;
+    opacity: 0;
+    cursor: pointer;
+    z-index: 999999999;
+}
+
+.cbtn.on{
+    opacity: 1;
+}
+
+
+/* 기본 포커스 아웃라인 제거 */
+.cbtn:focus{
+    outline: none;
 }

@@ -47,6 +47,6 @@ ol, li {
     color: rgb(209, 139, 139);
 }
 
-.sub-menu a:hover  + #sidetext{
+.sub-menu a:hover + #sidetext{
     display: inline;
 }

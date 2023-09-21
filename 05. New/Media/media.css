@@ -1,0 +1,499 @@
+
+
+@media screen and (max-width: 1300px){
+    
+    .s-map{
+        position: absolute;
+        top: calc(40%/2);
+        left: calc(55%/2);
+        width: 600px;
+        height: 600px;
+        opacity: 0;
+        object-fit: fill;
+        z-index: 99999999;
+    }
+
+    .cbtn{
+        position: absolute;
+        top: 20%;
+        right: 10%;
+        font-size: 40px;
+        font-weight: bold;
+        color: white;
+        background-color: transparent;
+        border: none;
+        opacity: 0;
+        cursor: pointer;
+        z-index: 999999999;
+    }
+
+    .caption_1>h2{
+        position: relative;
+        font-size: max(12px, 30px);
+        text-align: center;
+        top: 20%;
+        font-family: 'Bebas Neue', sans-serif;
+        color: #fff;
+    }
+    .caption_1>h4{
+        position: relative;
+        font-size: max(12px, 20px);
+        text-align: center;
+        top: 15%;
+        font-family: 'Bebas Neue', sans-serif;
+        color: #fff;
+    }
+    
+    .caption_2>h2{
+        position: relative;
+        font-size: max(12px, 18px);
+        text-align: center;
+        top: 50%;
+        color: #fff;
+    }
+    
+    .caption_3>h2{
+        position: relative;
+        font-size: max(12px, 18px);
+        text-align: center;
+        top: 50%;
+        color: #fff;
+    }
+    
+    .caption_4>h2{
+        position: relative;
+        font-size: max(12px, 18px);
+        text-align: center;
+        top: 50%;
+        color: #fff;
+    }
+    
+    .c2-logo{
+        position: absolute;
+        transform: scale(.6);
+        left: -13%;
+        /* margin: 6% 0% 0% 22%; */
+    }
+    .c3-logo{
+        position: absolute;
+        transform: scale(.3);
+        left: -10%;
+        top: -8%;
+        /* margin: -5% 0% 0% 30%; */
+    }
+    .c4-logo{
+        position: absolute;
+        border-radius: 500px;
+        transform: scale(.2);
+        left: -15%;
+        top: -11%;
+        /* margin: -12% 0% 0% 23%; */
+    }
+
+    .menu-Btn-4{
+        width: 100%;
+        height: 100%;
+        color: #fff;
+        font-size: 25px;
+        background-image: linear-gradient(to right, #1a1c23, #303c49);
+        /* opacity: .9; */
+        white-space: nowrap;
+        text-size-adjust: auto;
+        overflow: hidden;
+        text-align: center;
+        outline: none;
+        font-family: 'Bebas Neue', sans-serif;
+        border: 1px dotted #00000000;
+        border-radius: 40px;
+    }
+    
+    .menu-Btn-5{
+        width: 100%;
+        height: 100%;
+        color: #fff;
+        font-size: 25px;
+        background-image: linear-gradient(to right, #1a1c23, #303c49);
+        /* opacity: .9; */
+        white-space: nowrap;
+        text-size-adjust: auto;
+        overflow: hidden;
+        text-align: center;
+        outline: none;
+        font-family: 'Bebas Neue', sans-serif;
+        border: 1px dotted #00000000;
+        border-radius: 40px;
+    }
+
+}
+@media screen and (max-width: 1200px){
+
+    .sub-menu a:hover + #sidetext{
+        margin: 2%;
+        display: block;
+    }
+
+}
+
+
+/*  1100px 이하 시 미디어 쿼리 */
+
+@media screen and (max-width: 1100px){
+    
+    .s-map{
+        position: absolute;
+        top: calc(40%/2);
+        left: calc(55%/2);
+        width: 400px;
+        height: 400px;
+        opacity: 0;
+        object-fit: fill;
+        z-index: 99999999;
+    }
+
+    .cbtn{
+        position: absolute;
+        top: 20%;
+        right: 20%;
+        font-size: 40px;
+        font-weight: bold;
+        color: white;
+        background-color: transparent;
+        border: none;
+        opacity: 0;
+        cursor: pointer;
+        z-index: 999999999;
+    }
+
+    .caption_1>h2{
+        position: relative;
+        font-size: max(12px, 30px);
+        text-align: center;
+        top: 20%;
+        font-family: 'Bebas Neue', sans-serif;
+        color: #fff;
+    }
+    .caption_1>h4{
+        position: relative;
+        font-size: max(12px, 18px);
+        text-align: center;
+        top: 15%;
+        font-family: 'Bebas Neue', sans-serif;
+        color: #fff;
+    }
+    
+    .caption_2>h2{
+        position: relative;
+        font-size: max(12px, 16px);
+        text-align: center;
+        top: 50%;
+        color: #fff;
+    }
+    
+    .caption_3>h2{
+        position: relative;
+        font-size: max(12px, 16px);
+        text-align: center;
+        top: 50%;
+        color: #fff;
+    }
+    
+    .caption_4>h2{
+        position: relative;
+        font-size: max(12px, 16px);
+        text-align: center;
+        top: 50%;
+        color: #fff;
+    }
+    
+    .c2-logo{
+        position: absolute;
+        transform: scale(.6);
+        left: -21%;
+        /* margin: 6% 0% 0% 22%; */
+    }
+    .c3-logo{
+        position: absolute;
+        transform: scale(.3);
+        left: -16%;
+        top: -8%;
+        /* margin: -5% 0% 0% 30%; */
+    }
+    .c4-logo{
+        position: absolute;
+        border-radius: 500px;
+        transform: scale(.2);
+        left: -21%;
+        top: -17%;
+        /* margin: -12% 0% 0% 23%; */
+    }
+
+    .menu-Btn-4{
+        width: 100%;
+        height: 100%;
+        color: #fff;
+        font-size: 20px;
+        background-image: linear-gradient(to right, #1a1c23, #303c49);
+        /* opacity: .9; */
+        text-align: center;
+        outline: none;
+        font-family: 'Bebas Neue', sans-serif;
+        border: 1px dotted #00000000;
+        border-radius: 40px;
+    }
+    
+    .menu-Btn-5{
+        width: 100%;
+        height: 100%;
+        color: #fff;
+        font-size: 20px;
+        background-image: linear-gradient(to right, #1a1c23, #303c49);
+        /* opacity: .9; */
+        text-align: center;
+        outline: none;
+        font-family: 'Bebas Neue', sans-serif;
+        border: 1px dotted #00000000;
+        border-radius: 40px;
+    }
+
+}
+
+@media screen and (max-width: 900px){
+
+    .c2-logo{
+        position: absolute;
+        transform: scale(.6);
+        left: -30%;
+        /* margin: 6% 0% 0% 22%; */
+    }
+    .c3-logo{
+        position: absolute;
+        transform: scale(.3);
+        left: -23%;
+        top: -8%;
+        /* margin: -5% 0% 0% 30%; */
+    }
+    .c4-logo{
+        position: absolute;
+        border-radius: 500px;
+        transform: scale(.2);
+        left: -30%;
+        top: -17%;
+        /* margin: -12% 0% 0% 23%; */
+    }
+    .caption_1>h2{
+        position: relative;
+        font-size: max(12px, 30px);
+        text-align: center;
+        top: 20%;
+        font-family: 'Bebas Neue', sans-serif;
+        color: #fff;
+    }
+    .caption_1>h4{
+        position: relative;
+        font-size: max(12px, 14px);
+        text-align: center;
+        top: 15%;
+        font-family: 'Bebas Neue', sans-serif;
+        color: #fff;
+    }
+    .caption_2>h2{
+        position: relative;
+        font-size: max(12px, 14px);
+        text-align: center;
+        top: 50%;
+        color: #fff;
+    }
+    .caption_3>h2{
+        position: relative;
+        font-size: max(12px, 14px);
+        text-align: center;
+        top: 50%;
+        color: #fff;
+    }
+    .caption_4>h2{
+        position: relative;
+        font-size: max(12px, 14px);
+        text-align: center;
+        top: 50%;
+        color: #fff;
+    }
+
+}
+
+/* 850px 이하 시 미디어 쿼리 */
+@media screen and (max-width: 850px){
+    
+    .s-map{
+        position: absolute;
+        top: calc(40%/2);
+        left: calc(55%/2);
+        width: 300px;
+        height: 300px;
+        opacity: 0;
+        object-fit: fill;
+        z-index: 99999999;
+    }
+
+    .cbtn{
+        position: absolute;
+        top: 20%;
+        right: 10%;
+        font-size: 40px;
+        font-weight: bold;
+        color: white;
+        background-color: transparent;
+        border: none;
+        opacity: 0;
+        cursor: pointer;
+        z-index: 999999999;
+    }
+
+    .menu-Btn-4{
+        width: 100%;
+        height: 100%;
+        color: #fff;
+        font-size: 17px;
+        background-image: linear-gradient(to right, #1a1c23, #303c49);
+        /* opacity: .9; */
+        text-align: center;
+        outline: none;
+        font-family: 'Bebas Neue', sans-serif;
+        border: 1px dotted #00000000;
+        border-radius: 40px;
+    }
+    
+    .menu-Btn-5{
+        width: 100%;
+        height: 100%;
+        color: #fff;
+        font-size: 17px;
+        background-image: linear-gradient(to right, #1a1c23, #303c49);
+        /* opacity: .9; */
+        text-align: center;
+        outline: none;
+        font-family: 'Bebas Neue', sans-serif;
+        border: 1px dotted #00000000;
+        border-radius: 40px;
+    }
+
+    .sub-menu a:hover + #sidetext{
+        margin: 2%;
+        display: block;
+        font-size: 16px;
+    }
+
+    .in-box>.part-box ul li h2{
+        position: absolute;
+        bottom: 0;
+        padding: 10px;
+        width: 97%;
+        color: #fff;
+        font-size: 45px;
+        font-family: 'Bebas Neue', sans-serif;
+        background: #303030bb;
+        border-radius: 18px;
+        text-align: center;
+        line-height: 150%;
+    }
+
+    .banbox>.slide2>li{
+        opacity: 0;
+    }
+
+    .c2-logo{
+        position: absolute;
+        transform: scale(.5);
+        left: -38%;
+        /* margin: 6% 0% 0% 22%; */
+    }
+    .c3-logo{
+        position: absolute;
+        transform: scale(.3);
+        left: -28%;
+        top: -8%;
+        /* margin: -5% 0% 0% 30%; */
+    }
+    .c4-logo{
+        position: absolute;
+        border-radius: 500px;
+        transform: scale(.2);
+        left: -38%;
+        top: -17%;
+        /* margin: -12% 0% 0% 23%; */
+    }
+
+    .footer-area_1{
+        height: 20vh;
+    }
+
+    .caption_1 {
+        width: 100%;
+        height: 100%;
+        background: rgba(16, 16, 16, 0.80);
+        border-radius: 20px;
+        border: 1px solid #3f3f3f;
+        box-shadow: 3px 3px 10px #1e1e1e7b;
+    }
+
+}
+
+/* 550px 이하 시 미디어 쿼리 */
+@media screen and (max-width: 550px){
+    
+    .s-map{
+        position: absolute;
+        top: calc(40%/2);
+        left: calc(50%/2);
+        width: 250px;
+        height: 250px;
+        opacity: 0;
+        object-fit: fill;
+        z-index: 99999999;
+    }
+
+    .cbtn{
+        position: absolute;
+        top: 20%;
+        right: 10%;
+        font-size: 40px;
+        font-weight: bold;
+        color: white;
+        background-color: transparent;
+        border: none;
+        opacity: 0;
+        cursor: pointer;
+        z-index: 999999999;
+    }
+
+}
+
+
+/* 450px 이하 시 미디어 쿼리 */
+@media screen and (max-width: 450px){
+    
+    .s-map{
+        position: absolute;
+        top: calc(40%/2);
+        left: calc(30%/2);
+        width: 220px;
+        height: 220px;
+        opacity: 0;
+        object-fit: fill;
+        z-index: 99999999;
+    }
+
+    .cbtn{
+        position: absolute;
+        top: 20%;
+        right: 10%;
+        font-size: 40px;
+        font-weight: bold;
+        color: white;
+        background-color: transparent;
+        border: none;
+        opacity: 0;
+        cursor: pointer;
+        z-index: 999999999;
+    }
+
+}

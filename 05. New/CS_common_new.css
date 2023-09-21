@@ -4,7 +4,9 @@
 @import url(./CS_button_new.css);
 @import url(./CS_fuc_new.css);
 @import url(./CS_nav_new.css);
+@import url(./Media/media.css);
 
+.col-0{width: 0%;}
 .col-0-5{width: 4%;}
 .col-1 {width: 8.33%;}
 .col-1-5 {width: 12.495%}
