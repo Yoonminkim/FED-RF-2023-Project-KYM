@@ -27,7 +27,7 @@ function wheelFn(e){
 
     if(sts_wheel) return;
     sts_wheel = 1;
-    setTimeout(()=>{sts_wheel=0},500);
+    setTimeout(()=>{sts_wheel=0},1500);
 
     let delta = e.wheelDelta;
 
