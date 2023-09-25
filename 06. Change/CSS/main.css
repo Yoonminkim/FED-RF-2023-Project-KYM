@@ -1,0 +1,21 @@
+@charset 'utf-8';
+
+html, body{
+    margin: 0;
+    padding: 0;
+}
+
+.page1{
+    width: 99vw;
+    height: 100vh;
+}
+.page2{
+    width: 99vw;
+    height: 100vh;
+    background-color: red;
+}
+.page3{
+    width: 99vw;
+    height: 100vh;
+    background-color: blue;
+}
